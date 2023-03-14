@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'snowtops';
+    src: url("./fonts/snowtopcaps-webfont.woff2") format("woff2"), 
+    url("./fonts/snowtopcaps-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+:root,
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font: 1em / 2em 'Helvetica', 'Arial', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.cover-photo{
+    min-height: 100vh;
+    background: center / cover no-repeat url("./images/winter.jpg");
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cover-photo img{
+    width: 100px;
+}
+
+.cover-photo header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 80px;
+    padding: 10px 20px;
+}
+
+.cover-photo h1{
+    font-family: 'snowtops', sans-serif;
+    color: white;
+    margin-left: 20px;
+}
+
+.cover-photo .footer-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.cover-photo footer,
+footer a{
+    color: #ebebeb;
+}
+
+.sign-up{
+    height: 100vh;
+    background: red;
+    width: 70%;
+}
