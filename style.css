@@ -23,10 +23,26 @@ body{
     display: flex;
 }
 
+input,
+label{
+    font-family: inherit;
+    font-size: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 30px;
+}
+
+input{
+    appearance: none;
+    border: 1px solid #d4d3d3;
+    border-radius: 2px;
+}
+
 .cover-photo{
     min-height: 100vh;
     background: center / cover no-repeat url("./images/winter.jpg");
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
 }
@@ -40,7 +56,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.4);
-    margin-top: 80px;
+    margin-top: 180px;
     padding: 10px 20px;
 }
 
@@ -62,11 +78,94 @@ body{
 
 .cover-photo footer,
 footer a{
-    color: #ebebeb;
+    color: #faf9f9;
+    font-size: 14px;
 }
 
 .sign-up{
     height: 100vh;
-    background: red;
-    width: 70%;
+    background: #d6d6d6;
+    width: 60%;
+}
+
+.sign-up > header{
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.sign-up h1{
+    margin: 0;
+    padding: 20px;
+    font-size: 1.4em;
+    width: 90%;
+    height: fit-content;
+}
+
+.sign-up h1 span{
+    font-style: italic;
+}
+
+.sign-up form{
+    background: #f9f9f9;
+    padding: 30px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.sign-up form h1{
+    padding: 0;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1 1 100%;
+}
+
+.sign-up ul{
+    margin: 0;
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    padding: 0;
+    gap: 3em;
+    width: 80%;
+}
+
+.sign-up label{
+    position: relative;
+    top: 10px;
+    font-size: .65em;
+    letter-spacing: 2px;
+}
+
+.sign-up button{
+    cursor: pointer;
+    display: block;
+    appearance: none;
+    margin: 50px 30px 0;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    background: #009DEC;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.sign-up button:active{
+    box-shadow: none;
+}
+
+p.existing{
+    margin-left: 30px;
+}
+
+p.existing a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #009DEC;
 }
