@@ -28,12 +28,12 @@ label{
     font-family: inherit;
     font-size: 100%;
     width: 100%;
-    padding: 0;
     margin: 0;
     height: 30px;
 }
 
 input{
+    padding: 5px;
     appearance: none;
     border: 1px solid #d4d3d3;
     border-radius: 2px;
@@ -63,7 +63,7 @@ input{
 .cover-photo h1{
     font-family: 'snowtops', sans-serif;
     color: white;
-    margin-left: 20px;
+    margin: 0 0 0 20px;
 }
 
 .cover-photo .footer-container{
@@ -116,21 +116,25 @@ footer a{
     padding: 0;
 }
 
-.col{
+.row{
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 50%;
+    gap: 40px;
 }
 
 .sign-up ul{
     margin: 0;
     display: flex;
+    flex-direction: column;
     list-style: none;
     justify-content: flex-start;
     padding: 0;
-    gap: 3em;
+    gap: 1em;
     width: 80%;
+}
+
+ul li{
+    width: 100%;
 }
 
 .sign-up label{
@@ -195,7 +199,7 @@ p.existing a:active{
         padding: 0;
         position: absolute;
         bottom: 0px;
-        right: 10px;
+        right: 15px;
     }
 
     .footer-container footer,
@@ -211,27 +215,24 @@ p.existing a:active{
         flex-direction: column;
     }
 
-    .sign-up > header > h1{
+    .sign-up h1{
         width: 100%;
         text-align: center;
-        flex: 1;
     }
 
-    .sign-up form h1{
-        width: 100%;
-        text-align: center;
+    ul,
+    .row{
+        gap: 5px;
     }
 
     .sign-up ul{
-        flex-direction: column;
         align-items: center;
         margin: 0 auto;
-        gap: 5px;
     }
 
-    .col{
+    .row{
+        flex-direction: column;
         width: 70%;
-        gap: 5px;
     }
 
     .sign-up button{
