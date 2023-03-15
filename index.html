@@ -34,6 +34,9 @@
         <form action="" method="get" id="info">
             <header>
                 <h1>Let's do this</h1>
+                <p>
+                    Required fields are followed by a *
+                </p>
             </header>
             <ul>
                 <div class="row">
@@ -41,10 +44,12 @@
                         <label for="first-name">FIRST NAME</label>
                         <input type="text" id="first-name" name="first-name" 
                         pattern="\D+" autofocus required>
+                        <span></span>
                     </li>
                     <li>
                         <label for="last-name">LAST NAME</label>
                         <input type="text" id="last-name" name="last-name" pattern="\D+" required>
+                        <span></span>
                     </li>
                 </div>
                 <div class="row">
@@ -52,6 +57,7 @@
                         <label for="email">EMAIL</label>
                         <input type="email" name="email" id="email" pattern="\w+@\D+\.com" 
                         placeholder="username@provider.com"required>
+                        <span></span>
                     </li>
                     <li>
                         <label for="phone">PHONE NUMBER</label>
@@ -63,10 +69,12 @@
                     <li>
                         <label for="pwd">PASSWORD</label>
                         <input type="password" name="password" id="pwd" required>
+                        <span></span>
                     </li>
                     <li>
                         <label for="confirm">CONFIRM PASSWORD</label>
                         <input type="password" name="confirm" id="confirm" required>
+                        <span></span>
                     </li>
                 </div>
             </ul>

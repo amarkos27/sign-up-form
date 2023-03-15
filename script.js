@@ -7,7 +7,6 @@ submit.addEventListener('click', () => {
         if(!input.validity.valid){
             if(!input.classList.contains('invalid')){
                 input.classList.add('invalid');
-                input.value = '';
             }
         }else{
             input.classList.remove('invalid');
