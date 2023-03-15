@@ -31,7 +31,7 @@
                 You <span>know</span> you want to.
             </h1>
         </header>
-        <form action="" method="get">
+        <form action="" method="get" id="info">
             <header>
                 <h1>Let's do this</h1>
             </header>
@@ -39,36 +39,39 @@
                 <div class="row">
                     <li>
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name" name="first-name">
+                        <input type="text" id="first-name" name="first-name" 
+                        pattern="\D+" autofocus required>
                     </li>
                     <li>
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name" name="last-name">
+                        <input type="text" id="last-name" name="last-name" pattern="\D+" required>
                     </li>
                 </div>
                 <div class="row">
                     <li>
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" pattern="\w+@\D+\.com" 
+                        placeholder="username@provider.com"required>
                     </li>
                     <li>
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone" id="phone">
+                        <input type="tel" name="phone" id="phone" 
+                        placeholder="xxx-xxx-xxxx" pattern="\d{3}-?\d{3}-?\d{4}">
                     </li>
                 </div>
                 <div class="row">
                     <li>
                         <label for="pwd">PASSWORD</label>
-                        <input type="password" name="password" id="pwd">
+                        <input type="password" name="password" id="pwd" required>
                     </li>
                     <li>
                         <label for="confirm">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm" id="confirm">
+                        <input type="password" name="confirm" id="confirm" required>
                     </li>
                 </div>
             </ul>
         </form>
-        <button type="submit">Create Account</button>
+        <button type="submit" form="info">Create Account</button>
         <p class="existing">
             Already have an account? <a href="#">Log in</a>
         </p>
